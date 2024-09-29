@@ -23,6 +23,19 @@ body {
 
 /* Style nav & logo bar */
 .logo-nav-bar {
-    background-color: yellow;
+    background-color: green;
 
+}
+
+/* Style emergency banner */
+.emergency-banner {
+    background-color: blue;
+    height: 150px
+}
+
+/* Create a flexbox for the services section */
+.services-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
