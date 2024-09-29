@@ -1,0 +1,28 @@
+/* Set styling for the whole document */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Set the colour scheme */
+* {
+    --primary-color: #588061;
+    --secondary-color: #E7B5AC;
+    --tertiary-color: #FDE9EA;
+    --light-primary: #869F77;
+    --light-secondary: #F9E0DB;
+}
+
+/* Make the header sticky */
+.sticky-banner {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: red;
+}
+
+/* Style nav & logo bar */
+.logo-nav-bar {
+    background-color: yellow;
+
+}
