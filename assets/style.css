@@ -39,6 +39,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: aqua;
 }
 
 /* styling for service boxes */
@@ -50,4 +51,28 @@ body {
     text-align: center;
     background-color: pink;
     flex: 1 1;
+}
+
+/* Create a flexbox for the articles section */
+.articles-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    background-color: yellow;
+}
+
+/* Create a flexbox for the enquiry form */
+.enquiry-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    background-color: grey;
+}
+
+.articles-and-enquiry {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
