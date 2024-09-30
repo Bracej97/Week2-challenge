@@ -7,9 +7,13 @@ body {
 * {
     --primary-color: #588061;
     --secondary-color: #E7B5AC;
-    --tertiary-color: #FDE9EA;
+    --tertiary-color: #caeed4;
     --light-primary: #869F77;
     --light-secondary: #F9E0DB;
+}
+
+body {
+    background-color: #eeeeee;
 }
 
 /* Make the header sticky */
@@ -18,20 +22,48 @@ body {
     top: 0;
     z-index: 999;
     width: 100%;
-    background-color: red;
     margin-bottom: 10px;
 }
 
 /* Style nav & logo bar */
 .logo-nav-bar {
-    background-color: green;
+    background-color: var(--primary-color);
+    height: 25px;
+}
 
+/* Remove bullets, padding and margin from nav bar */
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    height: 25px;
+    align-items: center;
+}
+
+/* Styling on nav buttons */
+.nav-options {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 40px;
+}
+
+.nav-options:hover {
+    background-color: var(--light-primary);
 }
 
 /* Style emergency banner */
 .emergency-banner {
-    background-color: blue;
+    background-color: var(--secondary-color);
     height: 150px
+}
+
+.emergency-banner h2 {
+    margin: 0;
 }
 
 /* Create a flexbox for the services section */
@@ -39,7 +71,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: aqua;
 }
 
 /* styling for service boxes */
@@ -49,8 +80,20 @@ body {
     max-width: 300px;
     margin: 10px;
     text-align: center;
-    background-color: pink;
     flex: 1 1;
+    border-radius: 10px;;
+}
+
+#support-yourself {
+    background-color: var(--primary-color);
+}
+
+#support-your-child {
+    background-color: var(--secondary-color);
+}
+
+#support-parent {
+    background-color: var(--tertiary-color);
 }
 
 /* Create a flexbox for the articles section */
@@ -58,8 +101,12 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    flex: 0.95;
     width: 50%;
-    background-color: yellow;
+    padding: 2px;
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    padding: 5px;
 }
 
 /* Create a flexbox for the enquiry form */
@@ -67,12 +114,18 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 50%;
-    background-color: grey;
+    width: 35%;
+    padding: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    align-items: center;
 }
 
+/* Bring enguiries and articles inline */
 .articles-and-enquiry {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
