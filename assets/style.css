@@ -14,6 +14,7 @@ body {
 
 body {
     background-color: #eeeeee;
+    margin: 0;
 }
 
 /* Make the header sticky */
@@ -38,8 +39,8 @@ body {
     padding: 0;
     overflow: hidden;
     display: flex;
-    width: 50%;
-    justify-content: flex-start;
+    width: 100%;
+    justify-content: center;
     height: 25px;
     align-items: center;
 }
@@ -49,7 +50,10 @@ body {
     text-decoration: none;
     color: white;
     padding: 10px;
+    margin: 20px;
     width: 40px;
+    overflow-wrap: normal;
+    text-align: center;
 }
 
 .nav-options:hover {
@@ -122,10 +126,47 @@ body {
     align-items: center;
 }
 
-/* Bring enguiries and articles inline */
+/* Bring enquiries and articles inline */
 .articles-and-enquiry {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+/* Style the footer */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    height: 50px;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Create a flexbox for about us page */
+.about-us {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Formatting on about us text */
+#about-us-text {
+    min-width: 55%;
+}
+
+/* Formatting on about image */
+#placeholder-about {
+       border-radius: 50px;
+       width: 400px;
+}
+
+#about-us-image {
+    align-self: flex-end;
+
 }
