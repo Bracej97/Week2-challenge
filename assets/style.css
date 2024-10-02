@@ -17,6 +17,10 @@ body {
     margin: 0;
 }
 
+h2, p, h1 {
+    padding-left: 5px;
+}
+
 /* Make the header sticky */
 .sticky-banner {
     position: sticky;
@@ -168,5 +172,29 @@ body {
 
 #about-us-image {
     align-self: flex-end;
+
+}
+
+/* Create flex for contact */
+.contact-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* contact page */
+.contact-details {
+    width: 40%;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#contact-page-enquiry {
+    margin-right: 10px;
 
 }
