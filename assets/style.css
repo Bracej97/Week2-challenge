@@ -33,7 +33,10 @@ h2, p, h1 {
 /* Style nav & logo bar */
 .logo-nav-bar {
     background-color: var(--primary-color);
-    height: 25px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Remove bullets, padding and margin from nav bar */
@@ -49,7 +52,7 @@ h2, p, h1 {
     align-items: center;
 }
 
-/* Styling on nav buttons */
+/* Styling on nav  */
 .nav-options {
     text-decoration: none;
     color: white;
@@ -62,6 +65,16 @@ h2, p, h1 {
 
 .nav-options:hover {
     background-color: var(--light-primary);
+}
+
+#logo {
+    align-self: center;
+    width: 100%;
+}
+
+.logo-img {
+    width: 150px;
+
 }
 
 /* Style emergency banner */
