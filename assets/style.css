@@ -79,8 +79,10 @@ h2, p, h1 {
 
 /* Style emergency banner */
 .emergency-banner {
-    background-color: var(--secondary-color);
-    height: 150px
+    background-color: #e1c913;
+    height: auto;
+    padding-bottom: 5px;
+    text-align: center;
 }
 
 .emergency-banner h2 {
