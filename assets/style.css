@@ -109,6 +109,7 @@ h2, p, h1 {
 
 #support-yourself {
     background-color: var(--primary-color);
+    color: white;
 }
 
 #support-your-child {
@@ -158,18 +159,68 @@ h2, p, h1 {
     padding: 5px;
 }
 
+.article-bodies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.article-images {
+    width: 150px;
+}
+.article-text {
+    width: 60%;
+}
+
 /* Create a flexbox for the enquiry form */
 .enquiry-section {
-    display: flex;
+   /* display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     width: 35%;
     padding: 5px;
     background-color: var(--primary-color);
     color: white;
     border-radius: 10px;
     align-items: center;
+    height: 220px;
 }
+
+.enquiry-form  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.name-input input,
+.email-input input {
+    width: 55%;
+}
+
+.enquiry-form label {
+    width: auto;
+}
+
+.name-input {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.email-input {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.message-input {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
 
 /* Bring enquiries and articles inline */
 .articles-and-enquiry {
@@ -177,6 +228,7 @@ h2, p, h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* Style the footer */
@@ -202,7 +254,7 @@ h2, p, h1 {
 
 /* Formatting on about us text */
 #about-us-text {
-    min-width: 55%;
+    width: 55%;
 }
 
 /* Formatting on about image */
@@ -233,9 +285,33 @@ h2, p, h1 {
     border-radius: 10px;
     margin-left: 10px;
     text-align: center;
+    height: 150px;
 }
 
 #contact-page-enquiry {
     margin-right: 10px;
+    min-width: 200px;
+}
 
+#email::before {
+    content: "✉️";
+    position: relative;
+    padding-right: 5px;
+}
+
+#telephone::before {
+    content: "📞";
+    position: relative;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+#email {
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
+#telephone {
+    text-decoration: none;
+    color: var(--primary-color)
 }

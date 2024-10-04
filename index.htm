@@ -57,28 +57,40 @@
 <section class="articles-section">
     <article class="articles" id="top-article">
         <h2>Top article</h2>
+        <div class="article-bodies">
+            <img src="./assets/placeholder.jpg" alt="placeholder-image" class="article-images" id="first-article-image">
+            <div class="article-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis vulputate enim, et scelerisque nulla. Fusce ante elit, consectetur sed velit in, efficitur molestie ex. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p></div>
+        </div>
     </article>
     <article class="articles" id="second-article">
         <h2>Second article</h2>
+        <div class="article-bodies">
+            <div><img src="./assets/placeholder.jpg" alt="placeholder-image" class="article-images" id="second-article-image"></div>
+            <div class="article-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis vulputate enim, et scelerisque nulla. Fusce ante elit, consectetur sed velit in, efficitur molestie ex. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p></div>
+        </div>
     </article>
     <article class="articles" id="third-article">
         <h2>Third article</h2>
+        <div class="article-bodies">
+            <img src="./assets/placeholder.jpg" alt="placeholder-image" class="article-images" id="third-article-image">
+            <div class="article-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis vulputate enim, et scelerisque nulla. Fusce ante elit, consectetur sed velit in, efficitur molestie ex. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p></div>
+        </div>
     </article>
 </section>
 
 <section class="enquiry-section">
     <h3>Make an enquiry...</h3>
     <form class="enquiry-form" id="home-page-enquiry">
-        <label for="name" class="form-details">Name:</label>
+        <div class="name-input"><label for="name" class="form-details">Name:</label>
         <input type="text" name="name" id="name">
-        <br>
-        <label for="email" class="form-details">Email:</label>
+        </div><br>
+        <div class="email-input"><label for="email" class="form-details">Email:</label>
         <input type="email" name="email" id="email">
-        <br>
-        <label for="message" class="form-details">Message:</label>
+        </div><br>
+        <div class="message-input"><label for="message" class="form-details">Message:</label>
         <textarea id="message" name="message" rows="4" cols="100" style="width:97%"></textarea>
-        <br>
-        <input type="button" value="Submit">
+        </div><br>
+        <input type="button" value="Submit" class="submit">
     </form>
 </section>
 </div>
